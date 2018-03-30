@@ -1,17 +1,15 @@
 // 1. Look at this if statement... something about it doesn't really make sense. Change it so that the messages make sense. 
 
 if(true) {
-  console.log("You'll never see this message!")
-} else {
   console.log("This message is visible")
+} else {
+  console.log("You'll never see this message!")
 }
 
 // 2. Create a for loop that counts to 10 backwards. Comment each line to explain what is happening.
 
-for( ) {
-	
-// your code here
-	
+for(i=10; i>=0; i-- ) {
+	console.log(i)
 }
 	
 // 3. Create an array with at least 4 items inside it. Console.log the second thing in the list. Change the fourth item to equal "duck".
@@ -31,5 +29,13 @@ if(!tired) {
 // 5. Time to combine all this! Create a function that takes in two numbers as arguements. Find the sum of those two numbers, if the sum is less than 20, console log the sum. If the two numbers sum to more than 20, console log "can't count that high!"
 
 function practiceFunc(arg1, arg2) {
+	var sum = arg1+arg2
+	if(sum<20){
+		console.log(sum)
+	} else if(sum>=20){
+		console.log("I can't count that high")
+	} else console.log("Did you enter numbers?")
+	
+		
 	// your code here
 }
